@@ -34,6 +34,6 @@ public class CashbackHackServiceTest {
         CashbackHackService cashbackHackService = new CashbackHackService();
         int actual = cashbackHackService.remain(1000);
         int expected = 0;
-        Assert.assertEquals("Пользователь уже совершил покупку на 1000 р.", actual, expected);
+        Assert.assertEquals(actual, expected, "Пользователь уже совершил покупку на 1000 р.");
     }
 }
