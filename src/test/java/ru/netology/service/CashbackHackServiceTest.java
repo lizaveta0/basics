@@ -33,7 +33,7 @@ public class CashbackHackServiceTest {
     public void testRemain4() {
         CashbackHackService cashbackHackService = new CashbackHackService();
         int actual = cashbackHackService.remain(1000);
-        int expected = 1000;
-        Assert.assertEquals(actual, expected);
+        int expected = 0;
+        Assert.assertEquals("Пользователь уже совершил покупку на 1000 р.", actual, expected);
     }
 }
